@@ -1,10 +1,11 @@
 @import 'reset';
-
+a {
+	text-decoration: none;
+}
 // ----------------------------------以上import
 body {
-    max-resolution: 0; ;
-    background-color: black;
-   
+    margin: 0;    
+     
 }
 
 .container {
@@ -16,20 +17,37 @@ img {
     width: 100%;
     height: 100%;
 }
-// .mask {
-//     width: 100%;
-//     height: 80vh;
-//     background-color: rgba(255, 255, 255, .1);
-// }
+.mask {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, .1);
+}
 //-----------------共用
 header {
     width: 100%;
-    height: 150px;   
-    margin: auto;
+    height: 150px;  
+    display: flex;
+   
+    background-color: rgb(146, 144, 144,.5);
 }
 .logo{
    
 }
 .logo img {   
- 
+    width: 15%;
+    height: 100%;
+    border-radius: 40%;
+   
+}
+.logo a {
+    
+}
+nav{
+    display: flex;
+   
+}
+nav .btn {
+    font-size: 20px;
+   
+    color: pink;
 }
