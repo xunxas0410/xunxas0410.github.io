@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> 
     <title>雪冰奇緣</title>
 </head>
 
@@ -26,17 +27,83 @@
                 </nav>
             </div>
             <div class="humberger fas fa-bars"
-            style="color: antiquewhite; font-size: 72px;position: absolute;top: 83px;left: 0;"></i></div>
+            style="color: antiquewhite; font-size: 100px;position: absolute;top:60px;left: 0;height: 100%;"></i></div>
+            <ul>
+                <li><a href="#">雪冰的故事</a></li>
+                <li><a href="#">雪冰的消息</a></li>
+                <li><a href="#">雪冰的產品</a></li>
+                <li><a href="#">雪冰的社群</a></li>
+                <li><a href="#">雪冰的訊息</a></li>
+            </ul>
         </div>
-        <div class="drawdown">
-            <a href="#" class="btn">雪冰的故事</a>
-            <a href="#" class="btn">雪冰的消息</a>
-            <a href="#" class="btn">雪冰的產品</a>
-            <a href="#" class="btn">雪冰的社群</a>
-            <a href="#" class="btn">雪冰的訊息</a>
-        </div>
-
     </header>
+    <!-- swiper start-->
+    <div class="container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="img/pricess.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/homepage_img11.jpg" alt="">
+        </div>
+         
+          <div class="swiper-slide">
+              <img src="img/bear.jpg" alt="">
+          </div>
+            <div class="swiper-slide">
+              <img src="img/homepage_img9.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/homepage_img13.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/index_ig5.jpg" alt="">
+        </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+     </div>
+    </div>
+ <!-- swiper end-->
+<section id="">
+    <h2>雪冰的故事</h2>
+    <div class="container">
+        <div class="story">
+            <img src="img/peach.png" alt="" class="story-img">
+            <div class="story-text">
+                <h3 class="">源起</h3>
+                <P>韓流襲卷全球，年輕女性的消費力遠高於男性，尤其
+                    女性對韓劇的熱愛，更帶動韓國各產業的相關商品的
+                    大賣。隨著ig、 fb 的蓬勃發展讓精緻的美食成為網紅
+                    明星拍照打卡的熱點</P>
+            </div>            
+        </div>
+    </div>
+</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
 </body>
 
 </html>
