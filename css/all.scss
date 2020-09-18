@@ -1,5 +1,11 @@
 @import 'reset';
-
+@import 'variable';
+@import 'font';
+@import 'color';
+@import 'card';
+@import 'rwd';
+@import 'mixin';
+@import 'layout';
 // ----------------------------------以上import
 *{
     box-sizing: border-box;
@@ -14,11 +20,7 @@ body {
 a{
     text-decoration: none;
 }
-.container {
-    width: 1280px;
-    height: 100%;
-    margin:auto;
-}
+
 img {
     width: 100%;
     height: 100%;
@@ -30,49 +32,6 @@ img {
 }
 //-----------------共用
 //header start
-header {
-    width: 100%;
-    height: 150px;     
-    background-color: black;
-    
-}
-.menu{   
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-.logo{
-    width: 250px;
-    height: 150px;
-    
-}
-.logo img {
-    border-radius: 45%;
-}
-.menu .btn{
-    color: rgb(251, 5, 239);
-    font-size:  16px;
-    margin: 0 20px;
-}
-.humberger{
-    display: none;
-}
-@media (max-width: 992px){
-    .container{
-        width: 100%;
-    }
-    nav{
-        display: none;
-    }
-    .menu{
-        width: 100%;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 //header end
