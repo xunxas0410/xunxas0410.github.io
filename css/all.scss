@@ -267,6 +267,14 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+@media (max-width: 922px) {
+    .news-card {
+    width: 100%;
+    min-height: 100%;
+    margin: 50px 0;
+    
+}
+}
 //news end
 .parallax1 {
     width: 100%;
@@ -277,5 +285,4 @@ a {
     background-size: cover;
 }
 // product star
-
 //product end
