@@ -422,5 +422,7 @@ a {
 .news-card .news-text {
   text-align: center;
   font-weight: 900;
+  line-height: 1.2;
+  padding: 10px;
 }
 /*# sourceMappingURL=all.css.map */
