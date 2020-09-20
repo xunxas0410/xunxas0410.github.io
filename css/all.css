@@ -518,9 +518,34 @@ a {
           transform: translate(-50%, -50%);
 }
 
+.socail-a {
+  text-align: center;
+  display: block;
+  width: 150px;
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid #fb05ef;
+  border-radius: 20px;
+  color: #fb05ef;
+}
+
 @media (max-width: 922px) {
   .socail-card {
     width: 100%;
   }
+}
+
+.box-message {
+  width: 49%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  border: 1px solid red;
+  margin: 0 0 50px 0;
 }
 /*# sourceMappingURL=all.css.map */

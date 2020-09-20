@@ -13,6 +13,7 @@ a {
 body {
     margin: 0;
     scroll-behavior: smooth;
+  
 }
 
 img {
@@ -31,8 +32,7 @@ h2 {
     font-weight: 900;
     color: rgb(251, 5, 239);
 }
-h3 {
-}
+
 .order-1 {
     order: 1;
 }
@@ -334,6 +334,16 @@ a {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.socail-a{
+    text-align: center;
+    display: block;
+    width: 150px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid  rgb(251, 5, 239);
+    border-radius: 20px;   
+    color: rgb(251, 5, 239);
+}
 @media (max-width: 922px) {
     .socail-card {
         width: 100%;
@@ -341,3 +351,16 @@ a {
     }
 }
 // socail end
+// message start
+.box-message{
+    width: 49%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid red;
+    margin: 0 0 50px 0 ;
+
+}
+
+//message end 
