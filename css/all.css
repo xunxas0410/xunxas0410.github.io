@@ -462,7 +462,7 @@ a {
 
 .socail-card {
   position: relative;
-  width: 32%;
+  width: 400px;
   min-height: 100%;
   margin: 20px 0;
   -webkit-transform-style: preserve-3d;
@@ -512,10 +512,15 @@ a {
 
 .socail-card .details {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 922px) {
+  .socail-card {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=all.css.map */
