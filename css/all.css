@@ -186,6 +186,11 @@ h2 {
       justify-content: space-around;
 }
 
+.align-content-space-between {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
 .poab {
   position: absolute;
 }
@@ -473,6 +478,7 @@ a {
   transition: 1s;
   -webkit-box-shadow: inset 0 300px 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0 300px 0 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .socail-card:hover {
@@ -496,8 +502,8 @@ a {
 }
 
 .socail-card:hover .imgBox {
-  -webkit-transform: rotateY(-135deg);
-          transform: rotateY(-135deg);
+  -webkit-transform: rotateY(-140deg);
+          transform: rotateY(-140deg);
 }
 
 .socail-card .imgBox .img {
@@ -536,16 +542,38 @@ a {
 }
 
 .box-message {
-  width: 49%;
+  width: 50%;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: black;
   border: 1px solid red;
   margin: 0 0 50px 0;
+}
+
+.box-address {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=all.css.map */
