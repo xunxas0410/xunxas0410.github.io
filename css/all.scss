@@ -10,10 +10,11 @@
 a {
     text-decoration: none;
 }
-body {
-    margin: 0;
+html{
     scroll-behavior: smooth;
-  
+}
+body {
+    margin: 0; 
 }
 
 img {
@@ -450,3 +451,12 @@ a {
     
 }
 //message end 
+
+// gototop
+#GoToTop {   
+    transition: .8s;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+}

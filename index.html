@@ -389,6 +389,9 @@
             </div>
         </div>
     </section>
+    <a href="#" id="GoToTop">
+        <img src="img/ice.png" alt="" style="width: 50px;">
+    </a>
     <!-- message end -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script>
@@ -445,6 +448,15 @@
             }
         });
       </script>
+       <script>
+        $(function () {
+            $("#GoToTop").on("click", function () {
+
+                $("html, body").scrollTop(0);
+
+            })
+        })
+    </script>
 </body>
 
 </html>

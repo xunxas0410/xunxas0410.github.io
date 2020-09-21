@@ -111,9 +111,12 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 img {
@@ -662,5 +665,14 @@ a {
   .box-text {
     display: none;
   }
+}
+
+#GoToTop {
+  -webkit-transition: .8s;
+  transition: .8s;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
 }
 /*# sourceMappingURL=all.css.map */
