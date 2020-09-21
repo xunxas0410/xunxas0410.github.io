@@ -190,7 +190,7 @@ a {
 }
 @media (max-width: 922px) {
     .swiper-container {
-        height: 80vh;
+        height: 50vh;
     }
 }
 //swiper end
@@ -292,7 +292,44 @@ a {
     background-size: cover;
 }
 // product star
-
+.swiper-container1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 50px 0;
+  }
+  .swiper-container1::before{
+      content: '冰品';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 30px;
+      color: #aaaaaa;
+  }
+  .swiper-container1 .swiper-slide h4{
+      position: absolute;
+      bottom: 45px;
+  }
+  .swiper-container2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 50px 0;
+  }
+  .swiper-container2::before{
+      content: '甜品';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 30px;
+      color: #aaaaaa;
+  }
+  .swiper-container2 .swiper-slide h4{
+    position: absolute;
+    bottom: 45px;
+}
 //product end
 // socail start
 .socail-card {
@@ -386,7 +423,7 @@ a {
     top: 0;
     left: 0;
     border-left: 1px solid black;
-    height: 200px;
+    height: 150px;
     margin: -10px;
 }
 .box-text p {
@@ -403,9 +440,9 @@ a {
 @media (max-width:922px){
     .box-message{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
-       
+        height: 100%;
     }
     .box-text{
         display: none;        
