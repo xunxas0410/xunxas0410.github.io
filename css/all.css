@@ -537,12 +537,12 @@ a {
 
 @media (max-width: 922px) {
   .socail-card {
-    width: 100%;
+    width: 80%;
   }
 }
 
 .box-message {
-  width: 50%;
+  width: 49%;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,17 +563,34 @@ a {
 
 .box-text {
   width: 50%;
+  min-height: 300px;
+  position: relative;
+}
+
+.box-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 1px solid black;
+  height: 200px;
+  margin: -10px;
+}
+
+.box-text p {
+  width: 100%;
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  line-height: 1.5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 922px) {
+  .box-text {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=all.css.map */
