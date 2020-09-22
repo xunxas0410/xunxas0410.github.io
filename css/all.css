@@ -117,6 +117,7 @@ html {
 
 body {
   margin: 0;
+  background: #C2FF68;
 }
 
 img {
@@ -334,6 +335,9 @@ a {
     left: 0;
     z-index: 99;
     text-align: center;
+    background-color: black;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
   }
   li {
     display: inline-block;
@@ -341,6 +345,24 @@ a {
     background-color: black;
     color: #fb05ef;
     padding: 30px 0;
+    border-radius: 50%;
+  }
+  li:nth-child(1) {
+    border-top: 8px solid #fff;
+    border-right: 8px solid #fff;
+  }
+  li:nth-child(2) {
+    border-left: 8px solid #fff;
+  }
+  li:nth-child(3) {
+    border-right: 8px solid #fff;
+  }
+  li:nth-child(4) {
+    border-left: 8px solid #fff;
+  }
+  li:nth-child(5) {
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid #fff;
   }
 }
 
