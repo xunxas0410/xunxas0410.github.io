@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  background: #ccf58e;
+  background: #8dabfd;
 }
 
 img {
@@ -134,7 +134,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .logo {
@@ -163,11 +163,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav a {
@@ -210,11 +210,11 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .logo {
     position: absolute;
@@ -262,7 +262,6 @@ a {
     border-bottom: 8px solid #fff;
   }
 }
-
 .swiper-container {
   width: 100%;
   height: 83vh;
@@ -508,7 +507,8 @@ a {
 
 @media (max-width: 922px) {
   .socail-card {
-    width: 80%;
+    width: 100%;
+    height: 100%;
   }
 }
 
