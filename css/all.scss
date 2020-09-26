@@ -113,7 +113,9 @@ header {
 .logo img {
   border-radius: 45%;
 }
-
+.menu{
+    width: 100%;
+}
 .menu .btn {
   color: #fb05ef;
   font-size: 24px;
@@ -126,6 +128,7 @@ header {
 }
 
 nav {
+    width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,15 +166,17 @@ a {
   color: #fb05ef;
   font-size: 24px;
 }
-
 @media (max-width: 922px) {
+    nav{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
   .container {
     width: 100%;
     position: relative;
   }
-  nav {
-    display: none;
-  }
+ 
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -237,7 +242,7 @@ a {
     height: 83vh;
     margin: 5px 0;
 }
-@media (max-width: 922px) {
+@media (max-width: 767px) {
     .swiper-container {
         height: 50vh;
     }
@@ -267,7 +272,7 @@ a {
     justify-content: center;
     margin: 10px 0;
 }
-@media (max-width: 922px) {
+@media (max-width: 767px) {
     .story {
         display: inline;
     }
@@ -324,7 +329,7 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-@media (max-width: 922px) {
+@media (max-width: 767px) {
     .news-card {
         width: 100%;
         min-height: 100%;
@@ -437,9 +442,9 @@ a {
 .map{
     width: 100%;
 }
-@media (max-width: 922px) {
+@media (max-width: 767px) {
     .socail-card {
-        width: 100%;
+        width: 80%;
         height: 100%;
     }
 }
@@ -486,7 +491,7 @@ a {
     height: 100%;
     overflow: hidden;
 }
-@media (max-width:922px){
+@media (max-width:767px){
     .box-message{
         display: flex;
         flex-direction: column;

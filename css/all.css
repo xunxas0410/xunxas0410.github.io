@@ -147,6 +147,10 @@ header {
   border-radius: 45%;
 }
 
+.menu {
+  width: 100%;
+}
+
 .menu .btn {
   color: #fb05ef;
   font-size: 24px;
@@ -159,6 +163,7 @@ header {
 }
 
 nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,12 +203,15 @@ a {
 }
 
 @media (max-width: 922px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .container {
     width: 100%;
     position: relative;
-  }
-  nav {
-    display: none;
   }
   .menu {
     display: -webkit-box;
@@ -268,7 +276,7 @@ a {
   margin: 5px 0;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 767px) {
   .swiper-container {
     height: 50vh;
   }
@@ -310,7 +318,7 @@ a {
   margin: 10px 0;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 767px) {
   .story {
     display: inline;
   }
@@ -370,7 +378,7 @@ a {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 767px) {
   .news-card {
     width: 100%;
     min-height: 100%;
@@ -505,9 +513,9 @@ a {
   width: 100%;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 767px) {
   .socail-card {
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
 }
@@ -569,7 +577,7 @@ a {
   overflow: hidden;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 767px) {
   .box-message {
     display: -webkit-box;
     display: -ms-flexbox;
