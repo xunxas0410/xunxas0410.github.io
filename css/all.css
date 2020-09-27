@@ -14,7 +14,10 @@ html {
 
 body {
   margin: 0;
-  background: rgba(224, 152, 152, 0.5);
+  background-image: url("/img/background-image.png");
+  background-repeat: repeat;
+  overflow-y: scroll;
+  background-size: 10px 10px;
 }
 
 img {
@@ -120,13 +123,21 @@ header {
   height: 150px;
   position: -webkit-sticky;
   position: sticky;
-  background: rgba(224, 152, 152, 0.5);
+  position: fixed;
+  background: #e09898;
+  z-index: 99;
 }
 
 .container {
   width: 1280px;
   height: 100%;
   margin: auto;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
 }
 
 .menu {
@@ -137,16 +148,6 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-
-.logo {
-  width: 150px;
-  height: 120px;
-  margin: 10px 0;
-}
-
-.logo img {
-  border-radius: 45%;
 }
 
 .menu {
@@ -161,6 +162,20 @@ header {
   border-radius: 20px;
   font-weight: 900;
   cursor: pointer;
+}
+
+.menu .btn:hover {
+  color: aqua;
+}
+
+.logo {
+  width: 150px;
+  height: 120px;
+  margin: 10px 0;
+}
+
+.logo img {
+  border-radius: 45%;
 }
 
 nav {
@@ -237,10 +252,11 @@ a {
   .humberger:hover ~ ul {
     display: block;
     position: absolute;
-    top: 140px;
+    top: 130px;
     left: -50px;
     z-index: 99;
     text-align: center;
+    background: #e09898;
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
   }
@@ -272,10 +288,15 @@ a {
 }
 .swiper-container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  z-index: -1;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .swiper-container {
     height: 55vh;
   }
@@ -324,7 +345,7 @@ a {
 .decoration-1 {
   display: inline-block;
   position: absolute;
-  top: 1000px;
+  top: 900px;
   left: 0;
   width: 500px;
   height: 100px;
@@ -343,7 +364,10 @@ a {
           transform: rotate(20deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 922px) {
+  .container {
+    width: 100%;
+  }
   .story {
     display: inline;
   }
@@ -421,12 +445,18 @@ a {
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .news-card {
     width: 100%;
     min-height: 100%;
     margin: 50px 0;
   }
   .intro {
+    display: none;
+  }
+  .decoration-4 {
     display: none;
   }
 }
@@ -446,6 +476,7 @@ a {
   overflow: hidden;
   position: relative;
   margin: 0 0 50px 0;
+  cursor: pointer;
 }
 
 .swiper-container1::before {
@@ -459,8 +490,8 @@ a {
 
 .swiper-container1 .swiper-slide h4 {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .swiper-container2 {
@@ -469,6 +500,7 @@ a {
   overflow: hidden;
   position: relative;
   margin: 0 0 50px 0;
+  cursor: pointer;
 }
 
 .swiper-container2::before {
@@ -482,8 +514,8 @@ a {
 
 .swiper-container2 .swiper-slide h4 {
   position: absolute;
-  bottom: 45px;
-  left: 20px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .socail-card {
@@ -514,7 +546,6 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
   -webkit-transform-origin: left;
           transform-origin: left;
   z-index: 1;
@@ -554,6 +585,12 @@ a {
   border: 1px solid #43b9a8;
   border-radius: 20px;
   color: #43b9a8;
+  cursor: pointer;
+}
+
+.socail-a:hover {
+  color: aqua;
+  border: 1px solid aqua;
 }
 
 .map {
@@ -561,9 +598,21 @@ a {
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .socail-card {
     width: 80%;
-    height: 100%;
+  }
+  .swiper-container1 .swiper-slide h4 {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+  }
+  .swiper-container2 .swiper-slide h4 {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
   }
 }
 
@@ -623,6 +672,9 @@ a {
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .box-message {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -653,8 +705,8 @@ a {
 @media (max-width: 767px) {
   #GoToTop {
     position: fixed;
-    left: 0px;
-    bottom: 20px;
+    right: 0px;
+    bottom: 0px;
   }
 }
 

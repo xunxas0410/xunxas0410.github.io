@@ -2,7 +2,7 @@ $font-title: 24px;
 $font-second-title: 20px;
 $font-p: 18px;
 $primary: #43b9a8;
-$second:red;
+$second: red;
 $border-color: black;
 // ----------------------------------以上import
 * {
@@ -15,9 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;  
-    background: rgba(224, 152, 152, .5);
-    
+    margin: 0;
+    background-image: url("/img/background-image.png");
+    background-repeat: repeat;
+    overflow-y: scroll;
+    background-size: 10px 10px;
 }
 
 img {
@@ -88,16 +90,22 @@ h2 {
 header {
     width: 100%;
     height: 150px;
-    position:sticky; 
+    position: sticky;
+    position: fixed;
+    background: rgba(224, 152, 152, 1);
+    z-index: 99;
    
-    background: rgba(224, 152, 152, .5);
 }
 .container {
     width: 1280px;
     height: 100%;
     margin: auto;
 }
-
+:target:before {
+content: "";
+display: block;
+height: 100px;
+}
 .menu {
     width: 100%;
     position: relative;
@@ -106,16 +114,6 @@ header {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-}
-
-.logo {
-    width: 150px;
-    height: 120px;
-    margin: 10px 0;
-}
-
-.logo img {
-    border-radius: 45%;
 }
 .menu {
     width: 100%;
@@ -128,6 +126,19 @@ header {
     border-radius: 20px;
     font-weight: 900;
     cursor: pointer;
+}
+.menu .btn:hover {
+    color: aqua;
+}
+
+.logo {
+    width: 150px;
+    height: 120px;
+    margin: 10px 0;
+}
+
+.logo img {
+    border-radius: 45%;
 }
 
 nav {
@@ -203,11 +214,11 @@ a {
     .humberger:hover ~ ul {
         display: block;
         position: absolute;
-        top: 140px;
+        top: 130px;
         left: -50px;
         z-index: 99;
         text-align: center;
-     
+         background: rgba(224, 152, 152, 1);
         -webkit-transition: all 0.8s ease;
         transition: all 0.8s ease;
     }
@@ -242,9 +253,15 @@ a {
 //swiper start
 .swiper-container {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    z-index: -1;
+    cursor: pointer;
 }
+
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
     .swiper-container {
         height: 55vh;
     }
@@ -280,7 +297,7 @@ a {
 .decoration-1 {
     display: inline-block;
     position: absolute;
-    top: 1000px;
+    top: 900px;
     left: 0;
     width: 500px;
     height: 100px;
@@ -295,7 +312,10 @@ a {
     height: 100px;
     transform: rotate(20deg);
 }
-@media (max-width: 767px) {
+@media (max-width: 922px) {
+    .container {
+        width: 100%;
+    }
     .story {
         display: inline;
     }
@@ -359,8 +379,7 @@ a {
     text-overflow: ellipsis;
 }
 
-
-.decoration-4{
+.decoration-4 {
     display: inline-block;
     position: absolute;
     top: -50px;
@@ -370,14 +389,20 @@ a {
     transform: rotate(20deg);
 }
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
     .news-card {
         width: 100%;
         min-height: 100%;
         margin: 50px 0;
     }
-  .intro{
-      display: none;
-  }  
+    .intro {
+        display: none;
+    }
+    .decoration-4 {
+        display: none;
+    }
 }
 //news end
 .parallax1 {
@@ -395,6 +420,7 @@ a {
     overflow: hidden;
     position: relative;
     margin: 0 0 50px 0;
+    cursor: pointer;
 }
 .swiper-container1::before {
     content: "冰品";
@@ -402,14 +428,12 @@ a {
     top: 0;
     left: 0;
     font-size: $font-title;
-     color: #5d5d5d;
-
+    color: #5d5d5d;
 }
 .swiper-container1 .swiper-slide h4 {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    
+    bottom: 0px;
+    left: 0px;
 }
 .swiper-container2 {
     width: 100%;
@@ -417,6 +441,7 @@ a {
     overflow: hidden;
     position: relative;
     margin: 0 0 50px 0;
+    cursor: pointer;
 }
 .swiper-container2::before {
     content: "甜品";
@@ -424,12 +449,12 @@ a {
     top: 0;
     left: 0;
     font-size: $font-title;
-      color: #5d5d5d;
+    color: #5d5d5d;
 }
 .swiper-container2 .swiper-slide h4 {
     position: absolute;
-    bottom: 45px;
-    left: 20px;
+    bottom: 0px;
+    left: 0px;
 }
 //product end
 // socail start
@@ -453,7 +478,7 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
+
     transform-origin: left;
     z-index: 1;
     transition: 1s;
@@ -482,17 +507,34 @@ a {
     width: 150px;
     font-size: $font-second-title;
     padding: 20px;
-    border: 1px solid $primary; 
+    border: 1px solid $primary;
     border-radius: 20px;
-    color:$primary;
+    color: $primary;
+    cursor: pointer;
+}
+.socail-a:hover {
+    color: aqua;
+    border: 1px solid aqua;
 }
 .map {
     width: 100%;
 }
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
     .socail-card {
         width: 80%;
-        height: 100%;
+    }
+    .swiper-container1 .swiper-slide h4 {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+    }
+    .swiper-container2 .swiper-slide h4 {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
     }
 }
 // socail end
@@ -502,8 +544,7 @@ a {
     height: 400px;
     display: flex;
     justify-content: space-around;
-   
-   
+
     margin: 0 0 30px 0;
 }
 .box-address {
@@ -538,6 +579,9 @@ a {
     overflow: hidden;
 }
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
     .box-message {
         display: flex;
         flex-direction: column;
@@ -560,10 +604,10 @@ a {
     animation: upDown 0.3s infinite alternate;
 }
 @media (max-width: 767px) {
-    #GoToTop{
+    #GoToTop {
         position: fixed;
-        left:0px;
-        bottom:20px;
+        right: 0px;
+        bottom: 0px;
     }
 }
 @keyframes upDown {
