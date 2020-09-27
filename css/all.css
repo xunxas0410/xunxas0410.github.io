@@ -118,6 +118,9 @@ h2 {
 header {
   width: 100%;
   height: 150px;
+  position: -webkit-sticky;
+  position: sticky;
+  background: rgba(224, 152, 152, 0.5);
 }
 
 .container {
@@ -406,11 +409,25 @@ a {
   text-overflow: ellipsis;
 }
 
+.decoration-4 {
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  right: -300px;
+  width: 500px;
+  height: 100px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
 @media (max-width: 767px) {
   .news-card {
     width: 100%;
     min-height: 100%;
     margin: 50px 0;
+  }
+  .intro {
+    display: none;
   }
 }
 
@@ -443,7 +460,7 @@ a {
 .swiper-container1 .swiper-slide h4 {
   position: absolute;
   bottom: 20px;
-  left: 0;
+  left: 20px;
 }
 
 .swiper-container2 {
@@ -466,6 +483,7 @@ a {
 .swiper-container2 .swiper-slide h4 {
   position: absolute;
   bottom: 45px;
+  left: 20px;
 }
 
 .socail-card {
@@ -630,6 +648,14 @@ a {
   z-index: 99;
   -webkit-animation: upDown 0.3s infinite alternate;
           animation: upDown 0.3s infinite alternate;
+}
+
+@media (max-width: 767px) {
+  #GoToTop {
+    position: fixed;
+    left: 0px;
+    bottom: 20px;
+  }
 }
 
 @-webkit-keyframes upDown {
