@@ -205,8 +205,8 @@ nav a {
 ul {
   display: none;
   position: absolute;
-  top: 90px;
-  left: -10px;
+  top: 130px;
+  left: -75px;
   z-index: 99;
 }
 
@@ -253,11 +253,7 @@ a {
   }
   .humberger:hover ~ ul {
     display: block;
-    position: absolute;
-    top: 90px;
     z-index: 99;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
   }
   ul:hover {
     display: block;
@@ -266,31 +262,15 @@ a {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(224, 152, 152, 0.9);
     color: #43b9a8;
     padding: 34px 0;
-    border-radius: 50%;
+    border: 1px solid black;
     text-align: center;
   }
   a {
+    font-size: 24px;
     display: block;
-  }
-  li:nth-child(1) {
-    border-top: 8px solid black;
-    border-right: 8px solid black;
-  }
-  li:nth-child(2) {
-    border-left: 12px solid black;
-  }
-  li:nth-child(3) {
-    border-right: 12px solid black;
-  }
-  li:nth-child(4) {
-    border-left: 12px solid black;
-  }
-  li:nth-child(5) {
-    border-right: 8px solid black;
-    border-bottom: 8px solid black;
   }
 }
 .swiper-container {
@@ -370,7 +350,7 @@ a {
     text-align: center;
   }
   .story-img {
-    width: 100%;
+    width: 30%;
   }
   article .decoration-1 {
     display: none;
