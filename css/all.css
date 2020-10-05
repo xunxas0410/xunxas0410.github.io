@@ -131,7 +131,7 @@ header {
 }
 
 .container {
-  width: 1280px;
+  width: 1180px;
   height: 100%;
   margin: auto;
 }
@@ -220,7 +220,7 @@ a {
   font-size: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 922px) {
   nav {
     display: none;
   }
@@ -280,9 +280,6 @@ a {
 }
 
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
   .swiper-container {
     height: 60vh;
   }
@@ -340,9 +337,6 @@ a {
 }
 
 @media (max-width: 922px) {
-  .container {
-    width: 100%;
-  }
   .story {
     display: inline;
   }
@@ -430,9 +424,6 @@ a {
 }
 
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
   .news-card {
     width: 100%;
     min-height: 100%;
@@ -502,7 +493,7 @@ a {
 
 .socail-card {
   position: relative;
-  width: 400px;
+  width: 350px;
   min-height: 100%;
   margin: 20px 0;
   -webkit-transform-style: preserve-3d;
@@ -580,9 +571,6 @@ a {
 }
 
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
   .socail-card {
     width: 80%;
   }
@@ -654,9 +642,6 @@ a {
 }
 
 @media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
   .box-message {
     display: -webkit-box;
     display: -ms-flexbox;
