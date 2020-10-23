@@ -393,6 +393,9 @@
                 <text x="450" y="200" fill="#fff" stroke="#43b9a8" id="text-logo" stroke-width="2" font-size="36">@Snow Ice Romance</text>
             </svg>
         </div>
+        <div id="clock">
+
+        </div>
         </div>
     </footer>
     <a href="#" id="GoToTop">
@@ -403,6 +406,7 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
@@ -465,7 +469,16 @@
                 $("html, body").scrollTop(0);
 
             })
-        })
+        });
+
+        // 用vue 顯示時間
+        var clock = new Vue({
+            el: '#clock',       //抓取id clock
+            data:{
+                time: '', 
+                date: ''
+            }  
+        });
     </script>
 </body>
 
